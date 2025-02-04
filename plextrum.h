@@ -1,7 +1,7 @@
 /**
- * lexer.h
+ * plextrum.h
  * Copyright (C) 2024 Paul Passeron
- * LEXER header file
+ * pLEXtrum header file
  * Paul Passeron <paul.passeron2@gmail.com>
  */
 
@@ -32,8 +32,8 @@
       functions that act on the lexer itself)
  ********************************************************************************/
 
-#ifndef LEXER_H
-#define LEXER_H
+#ifndef PLEXTRUM_H
+#define PLEXTRUM_H
 
 #include "dynarr.h"
 #include <assert.h>
@@ -433,6 +433,6 @@ bool lexer_is_digit(char c) { return c >= '0' && c <= '9'; }
 
 bool lexer_is_alnum(char c) { return lexer_is_alpha(c) || lexer_is_digit(c); }
 
-#endif // LEXER_IMPL
+#endif // PLEXTRUM_IMPL
 
-#endif // LEXER_H
+#endif //PLEXTRUM_H
